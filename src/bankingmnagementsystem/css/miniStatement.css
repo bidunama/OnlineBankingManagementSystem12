@@ -1,0 +1,20 @@
+.content {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #673AB7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #512DA8;
+  }
+  

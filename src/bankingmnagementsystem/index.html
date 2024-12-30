@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banking Management System</title>
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/transactions.css">
+  <link rel="stylesheet" href="css/pinManagement.css">
+  <link rel="stylesheet" href="css/debit.css">
+  <link rel="stylesheet" href="css/credit.css">
+  <link rel="stylesheet" href="css/miniStatement.css">
+</head>
+<body>
+  <header>
+    <img src="https://img.freepik.com/premium-photo/ai-generated-illustration-modern-bank-building-financial-branch-city-street_812649-1725.jpg" alt="Bank Logo">
+    <h1>Banking Management System</h1>
+  </header>
+
+  <div class="navbar">
+    <a href="#login">Login</a>
+    <a href="#transactions">Transactions</a>
+    <a href="#pinManagement">Pin Management</a>
+    <a href="#debit">Debit</a>
+    <a href="#credit">Credit</a>
+    <a href="#miniStatement">Mini Statement</a>
+  </div>
+
+  <div class="container">
+    <div id="login" class="content">
+      <h2>Login</h2>
+      <div class="form-container">
+        <input type="text" placeholder="Username" id="username">
+        <input type="password" placeholder="Password" id="password">
+        <button onclick="login()">Login</button>
+      </div>
+    </div>
+
+    <div id="transactions" class="content">
+      <h2>Transactions</h2>
+      <button onclick="showTransactions()">Show Transactions</button>
+    </div>
+
+    <div id="pinManagement" class="content">
+      <h2>Pin Management</h2>
+      <div class="form-container">
+        <input type="password" placeholder="New Pin" id="newPin">
+        <button onclick="updatePin()">Update Pin</button>
+      </div>
+    </div>
+
+    <div id="debit" class="content">
+      <h2>Debit</h2>
+      <div class="form-container">
+        <input type="number" placeholder="Amount" id="debitAmount">
+        <button onclick="debit()">Debit Amount</button>
+      </div>
+    </div>
+
+    <div id="credit" class="content">
+      <h2>Credit</h2>
+      <div class="form-container">
+        <input type="number" placeholder="Amount" id="creditAmount">
+        <button onclick="credit()">Credit Amount</button>
+      </div>
+    </div>
+
+    <div id="miniStatement" class="content">
+      <h2>Mini Statement</h2>
+      <button onclick="showMiniStatement()">Show Mini Statement</button>
+    </div>
+  </div>
+
+  <script src="js/login.js"></script>
+  <script src="js/transactions.js"></script>
+  <script src="js/pinManagement.js"></script>
+  <script src="js/debit.js"></script>
+  <script src="js/credit.js"></script>
+  <script src="js/miniStatement.js"></script>
+</body>
+</html>
